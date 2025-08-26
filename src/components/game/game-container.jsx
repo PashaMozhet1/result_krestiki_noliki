@@ -13,7 +13,6 @@ export function GameContainer() {
 	const handleClick = (cellIndex) => {
 		const newField = [...field];
 		newField[cellIndex] = `${currentPlayer}`;
-		// console.log(newField);
 		setField(newField);
 
 		if (checkWin(newField, currentPlayer)) {
@@ -23,21 +22,6 @@ export function GameContainer() {
 		} else {
 			setIsDraw(true);
 		}
-
-		// WIN_PATTERNS.map((combination) => {
-		// 	const [a, b, c] = combination;
-		// 	if (newField[a] && newField[a] === newField[b] && newField[b] === newField[c]) {
-		// 		setIsGameEnded(true);
-		// 		console.log(isGameEnded);
-		// 		return;
-		// 	} else if (newField.every((value) => value !== '') && !isGameEnded) {
-		// 		setIsDraw(true);
-		// 		return;
-		// 	}
-		// 	if (isGameEnded === false || isDraw === false) {
-		// 		setCurrentPlayer(currentPlayer === 'X' ? 'O' : 'X');
-		// 	}
-		// });
 	};
 
 	return (
