@@ -54,11 +54,3 @@ export function GameContainer() {
 		/>
 	);
 }
-
-GameContainer.propTypes = {
-	currentPlayer: PropTypes.string,
-	isDraw: PropTypes.bool,
-	isGameEnded: PropTypes.bool,
-	field: PropTypes.array,
-	handleClick: PropTypes.func,
-};

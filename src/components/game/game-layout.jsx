@@ -42,8 +42,12 @@ export const GameLayout = ({
 
 GameLayout.propTypes = {
 	currentPlayer: PropTypes.string,
-	isDraw: PropTypes.bool,
+	setCurrentPlayer: PropTypes.func,
 	isGameEnded: PropTypes.bool,
+	setIsGameEnded: PropTypes.func,
+	isDraw: PropTypes.bool,
+	setIsDraw: PropTypes.func,
 	field: PropTypes.array,
+	setField: PropTypes.func,
 	handleClick: PropTypes.func,
 };
